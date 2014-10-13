@@ -1,0 +1,66 @@
+﻿Build started 10/12/2014 5:02:12 PM.
+     1>Project "C:\Users\Anne\Documents\GitHub\DotAMapper\demoinfo2\demoinfo2.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Running Protocol Buffer Compiler on ai_activity.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         Running Protocol Buffer Compiler on demo.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         demo.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         Running Protocol Buffer Compiler on dota_commonmessages.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         netmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_commonmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_commonmessages.proto: Import "netmessages.proto" was not found or had errors.
+         Running Protocol Buffer Compiler on dota_modifiers.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         netmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_modifiers.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_modifiers.proto: Import "netmessages.proto" was not found or had errors.
+         dota_modifiers.proto:90:18: "CMsgVector" is not defined.
+         dota_modifiers.proto:91:18: "CMsgVector" is not defined.
+         Running Protocol Buffer Compiler on dota_usermessages.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         netmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_commonmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_commonmessages.proto: Import "netmessages.proto" was not found or had errors.
+         dota_usermessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         dota_usermessages.proto: Import "netmessages.proto" was not found or had errors.
+         dota_usermessages.proto: Import "dota_commonmessages.proto" was not found or had errors.
+         dota_usermessages.proto:218:18: "CMsgVector2D" is not defined.
+         dota_usermessages.proto:247:18: "CMsgVector" is not defined.
+         dota_usermessages.proto:254:18: "CDOTAMsg_LocationPing" is not defined.
+         dota_usermessages.proto:269:18: "CDOTAMsg_MapLine" is not defined.
+         dota_usermessages.proto:274:18: "CMsgVector" is not defined.
+         dota_usermessages.proto:282:18: "CMsgVector" is not defined.
+         dota_usermessages.proto:283:18: "CMsgVector2D" is not defined.
+         dota_usermessages.proto:311:18: "CMsgVector" is not defined.
+         dota_usermessages.proto:455:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:460:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:465:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:466:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:467:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:472:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:477:26: "CMsgVector" is not defined.
+         dota_usermessages.proto:485:26: "CMsgVector" is not defined.
+         Running Protocol Buffer Compiler on netmessages.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         netmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         Running Protocol Buffer Compiler on usermessages.proto...
+     1>.\protobuf-2.4.1\src : warning : directory does not exist.
+         google/protobuf/descriptor.proto: File not found.
+         netmessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         usermessages.proto: Import "google/protobuf/descriptor.proto" was not found or had errors.
+         usermessages.proto: Import "netmessages.proto" was not found or had errors.
+         usermessages.proto:151:18: "CMsgVector" is not defined.
+         usermessages.proto:158:18: "CMsgVector" is not defined.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(170,5): error MSB6006: "cmd.exe" exited with code 1.
+     1>Done Building Project "C:\Users\Anne\Documents\GitHub\DotAMapper\demoinfo2\demoinfo2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.54
