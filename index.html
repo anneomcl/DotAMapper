@@ -9,11 +9,11 @@
         <style>
 
             .point.positive {
-                color: steelblue;
+                stroke: steelblue;
             }
 
             .point.negative {
-                color: brown
+                stroke: steelblue;
             }
 
             body {
@@ -51,9 +51,10 @@
             var xAxis = d3.svg.axis()
                     .scale(x)
                     .orient("top");
+
             var yAxis = d3.svg.axis()
                     .scale(y)
-                    .orient("left").ticks(5)
+                    .orient("left")
 
             var svg = d3.select("body").append("svg")
                     .attr("width", width + margin.left + margin.right)
@@ -61,14 +62,23 @@
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-            d3.csv("dota2_data.csv", type, function(error, data) {
-                x.domain(d3.extent(data, function(d) { return d.Kdratio; })).nice();
-                y.domain(data.map(function(d) { return d.likes; }));
+            var xValue = function(d) { return d.Kdratio;}
+            var yValue = function(d) {return d.likes;}
+
+            d3.csv("dota2_data.csv", function(error, data) {
+
+                data.forEach(function(d){
+                    d.likes = +d.likes;
+                    d["Kdratio"] = +d["Kdratio"];
+                })
+
+                x.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1])
+                y.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
 
                 svg.selectAll(".point")
                         .data(data)
                         .enter().append("circle")
-                            .attr("class", function(d) { return d.kdratio < 0 ? "point negative" : "point positive"; })
+                            .attr("class", function(d) { return "point negative" })
                             .attr("cx", function(d) {return x(Math.min(0, d.Kdratio));})
                             .attr("cy", function(d) {return y(d.likes);})
                             .attr("r", 5)
@@ -83,14 +93,10 @@
                         .attr("x1", x(0))
                         .attr("x2", x(0))
                         .attr("y2", height)
+                        .call(yAxis)
 
 
             });
-
-            function type(d) {
-                d.value = +d.value;
-                return d;
-            }
         </script>
     </body>
 </html>
