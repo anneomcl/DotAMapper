@@ -42,8 +42,8 @@
                 // set chart options
             var options = {
                 title: "DotAMapper",
-                hAxis: {title: data.getColumnLabel(0), minValue: data.getColumnRange(0).min, maxValue: data.getColumnRange(0).max},
-                vAxis: {title: data.getColumnLabel(1), minValue: data.getColumnRange(1).min, maxValue: data.getColumnRange(1).max},
+                hAxis: {title: data.getColumnLabel(0) + "\n(Positive Votes)/(Negative Votes)", minValue: data.getColumnRange(0).min, maxValue: data.getColumnRange(0).max},
+                vAxis: {title: data.getColumnLabel(1) + "\n(Kills - Deaths)/(Kills + Deaths)", minValue: data.getColumnRange(1).min, maxValue: data.getColumnRange(1).max},
                 legend: 'none'
             };
 

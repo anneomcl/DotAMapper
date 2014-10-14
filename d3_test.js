@@ -1,7 +1,5 @@
-<div id="example"></div>
 
-<script src="http://d3js.org/d3.v3.js"></script>
-    <script>
+    <script src="http://d3js.org/d3.v3.js"></script>
     var margin = {top: 30, right: 30, bottom: 30, left: 30},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -59,4 +57,3 @@
 
 
         });
-    </script>
