@@ -3,8 +3,8 @@ import json
 f = open('dota2_data.csv','w')
 f.write('likes,Kdratio\n')
 paths = ['json/613379400.json', 'json/785923491.json', 'json/774695687.json', 'json/774622831.json',
-         'json/787345302.json', 'json/621555666.json', 'json/959213251.json', 'json/959026081.json',
-         'json/818016838.json', 'json/834549743.json'] #add json file paths here
+         'json/787345302.json', 'json/621555666.json', 'json/959026081.json',
+         'json/818016838.json', 'json/834549743.json'] #add json file paths here , 'json/959213251.json'
 for file in paths:
     data = open(file)
     steam_data = json.load(data)
